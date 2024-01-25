@@ -34,10 +34,12 @@ The async keyword is used to define asynchronous functions, and the await keywor
 ```js
 // Example using async/await with a Promise
 async function fetchData() {
-  console.log("Fetching data...");
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const data = await response.json();
-  console.log("Data:", data);
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const data = await response.json();
+  } catch (error) {
+    console.log("Error", error);
+  }
 }
 
 fetchData();
