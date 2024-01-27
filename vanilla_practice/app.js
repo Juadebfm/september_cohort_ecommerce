@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //fetch api
 
-  fetch("https://jsonplaceholder.typicode.com/posts")
+  fetch("https://fakestoreapi.com/products")
     .then((response) => response.json())
     .then((posts) => {
       console.log(posts);
@@ -27,11 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const title = document.createElement("h2");
     title.textContent = post.title;
     const body = document.createElement("p");
-    body.textContent = post.body;
+    body.textContent = post.description;
     const cardNumber = document.createElement("span");
     cardNumber.textContent = post.id;
+    const img = document.createElement("img");
+    img.src = post.image;
+    img.classList.add("img_class");
 
     card.appendChild(cardNumber);
+    card.appendChild(img);
     card.appendChild(title);
     card.appendChild(body);
 
