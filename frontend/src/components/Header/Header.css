@@ -1,0 +1,40 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gap-md {
+  gap: 2rem;
+}
+
+.Topnav {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 18px 25px;
+  font-size: 14px;
+}
+.Midnav {
+  padding: 1.8rem 25px;
+}
+
+.Midnav > a {
+  font-size: 26px;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_icon {
+  font-size: 35px;
+}
+
+.Midnav > a:hover {
+  text-decoration: underline;
+  text-decoration-color: orangered;
+}
