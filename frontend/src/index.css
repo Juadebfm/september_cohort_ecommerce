@@ -1,6 +1,17 @@
 /* GOOGLE FONT */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+:root {
+  --poppins: "Poppins", sans-serif;
+
+  --text-color: #191919;
+  --cat_bg: #e73c17;
+  --alert: #e23000;
+  --input_border: #f0f0f0;
+  --footer_bg: #2f333a;
+  --footer_bg_faded: #2f333a99;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   padding: 0;
